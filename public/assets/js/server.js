@@ -31,9 +31,13 @@ app.post("/api/notes", (req, res) => {
     }
 
     const notes = JSON.parse(data);
-    const newNote = req.body;
+    const { title, text } = req.body; // Destructure the title and text fields from req.body
 
-    newNote.id = Date.now();
+    const newNote = {
+      title,
+      text,
+      id: Date.now(),
+    };
 
     notes.push(newNote);
 
