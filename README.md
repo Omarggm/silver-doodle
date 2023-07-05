@@ -16,6 +16,9 @@
 - To view a note, simply click on the note in the list.
 - To delete a note, click on the trash can icon next to the note.
 
+## Live Usage
+[app](https://module-11-express-js-challenge-dd992d9d22ad.herokuapp.com/)
+
 ## Technology Stack
 
 - Node.js
