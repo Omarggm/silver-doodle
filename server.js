@@ -17,7 +17,7 @@ app.get("/notes", (req, res) => {
 });
 
 
-app.get("*", (req, res) => {
+app.get("/", (req, res) => {
   console.log("Sending index.html");
   res.sendFile(path.join(__dirname, "public/index.html"));
 });
@@ -82,5 +82,5 @@ function generateUniqueId() {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`App listening on PORT ${PORT}`);
+  console.log(`App listening on PORT ${PORT} live link http://localhost:${PORT}`);
 });
